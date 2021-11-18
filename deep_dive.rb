@@ -16,6 +16,6 @@ class DeepDive
   end
 
   def self.directory?(node)
-    node.is_a? Array
+    node.is_a? Hash
   end
 end

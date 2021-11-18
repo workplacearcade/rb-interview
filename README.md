@@ -25,8 +25,8 @@ a given item is a directory or a file, can you return a list of only the files?
 Determines whether or not the given argument is a directory.
 
 ```ruby
-directory? 'root/' # true
-directory? '001.jpg' # false
+DeepDive.directory? {name: 'root/', contents: []} # true
+DeepDive.directory? '001.jpg' # false
 ```
 
 ### `file?`
@@ -34,8 +34,8 @@ directory? '001.jpg' # false
 Determines whether or not the given argument is a file.
 
 ```ruby
-file? 'root/' # false
-file? '001.jpg' # true
+DeepDive.file? {name: 'root/', contents: []} # false
+DeepDive.file? '001.jpg' # true
 ```
 
 ## Assumptions
