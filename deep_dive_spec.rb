@@ -46,7 +46,7 @@ class DeepDiveTest < Minitest::Test
       assert_equal [], DeepDive.new(['empty/', []]).run()
     end
 
-    it "shows no files for an empty directory" do
+    it "can get files from a shallow depth" do
       input = ['empty/', ['1.txt', '2.txt']]
       result = DeepDive.new(input).run
       expected = input[1]
